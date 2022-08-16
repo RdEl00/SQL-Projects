@@ -20,4 +20,3 @@ $~$
 
 
 
-# [Certificate](https://github.com/RdEl00/SQL_Codecademy/blob/master/SQL_Certificate_%20Codecademy.pdf)
