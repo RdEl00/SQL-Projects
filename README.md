@@ -18,6 +18,7 @@ Project Name  | Tables (csv)   |
 [Analyze_Hacker_News_Trends.sqlite](https://github.com/RdEl00/SQL_Codecademy/blob/master/Analyze_Hacker_News_Trends.sqlite)  | [hacker_news .csv](https://github.com/RdEl00/SQL_Codecademy/blob/master/tables/hacker_news%20.csv)
 [Lyft_Trip_Data.sqlite](https://github.com/RdEl00/SQL_Codecademy/blob/master/Lyft_Trip_Data.sqlite)  | [Trips_Riders_Cars.csv](https://github.com/RdEl00/SQL_Codecademy/blob/master/tables/Trips_Riders_Cars.csv)
 [RPA_Fraud_Detection.sqlite](https://github.com/RdEl00/SQL_Codecademy/blob/master/RPA_Fraud_Detection.sqlite)  | [RPA_Fraud_Detection.csv](https://github.com/RdEl00/SQL_Codecademy/blob/master/tables/RPA_Fraud_Detection.csv)
+[RPA-Customer-Segmentation.sqlite](https://github.com/RdEl00/SQL_Codecademy/blob/master/RPA_Fraud_Detection.sqlite)  | [RPA-Customer-Segmentation.csv](https://github.com/RdEl00/SQL_Codecademy/blob/master/tables/RPA-Customer-Segmentation.csv)
 
 
 
