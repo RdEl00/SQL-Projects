@@ -18,7 +18,10 @@ Project Name  | Tables (csv)   |
 [Analyze_Hacker_News_Trends.sqlite](https://github.com/RdEl00/SQL_Codecademy/blob/master/Analyze_Hacker_News_Trends.sqlite)  | [hacker_news .csv](https://github.com/RdEl00/SQL_Codecademy/blob/master/tables/hacker_news%20.csv)
 [Lyft_Trip_Data.sqlite](https://github.com/RdEl00/SQL_Codecademy/blob/master/Lyft_Trip_Data.sqlite)  | [Trips_Riders_Cars.csv](https://github.com/RdEl00/SQL_Codecademy/blob/master/tables/Trips_Riders_Cars.csv)
 [RPA_Fraud_Detection.sqlite](https://github.com/RdEl00/SQL_Codecademy/blob/master/RPA_Fraud_Detection.sqlite)  | [RPA_Fraud_Detection.csv](https://github.com/RdEl00/SQL_Codecademy/blob/master/tables/RPA_Fraud_Detection.csv)
-[RPA-Customer-Segmentation.sqlite](https://github.com/RdEl00/SQL_Codecademy/blob/master/RPA_Fraud_Detection.sqlite)  | [RPA-Customer-Segmentation.csv](https://github.com/RdEl00/SQL_Codecademy/blob/master/tables/RPA-Customer-Segmentation.csv)
+[RPA-Customer-Segmentation.sqlite](https://github.com/RdEl00/SQL_Codecademy/blob/master/RPA-Customer-Segmentation.sqlite)  | [RPA-Customer-Segmentation.csv](https://github.com/RdEl00/SQL_Codecademy/blob/master/tables/RPA-Customer-Segmentation.csv)
+[Davie_Burgers_Subway_Ad.sqlite](https://github.com/RdEl00/SQL_Codecademy/blob/master/Davie_Burgers_Subway_Ad.sqlite)  | [Davie_Burgers_Subway_Ad.csv](https://github.com/RdEl00/SQL_Codecademy/blob/master/tables/Davie_Burgers_Subway_Ad.csv)
+[The_Metropolitan_Museum_of_Art.sqlite](https://github.com/RdEl00/SQL_Codecademy/blob/master/The_Metropolitan_Museum_of_Art.sqlite)  | [The_Metropolitan_Museum_of_Art.csv](https://github.com/RdEl00/SQL_Codecademy/blob/master/tables/The_Metropolitan_Museum_of_Art.csv)
+
 
 
 
