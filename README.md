@@ -5,6 +5,7 @@ This repository provides a sample of data analysis work I completed using SQL an
 <p align="center">
   <img src="img/my-sql-query.jpg">
 </p>
+
 <center>
 
 Project Name  | Tables (csv)   |
