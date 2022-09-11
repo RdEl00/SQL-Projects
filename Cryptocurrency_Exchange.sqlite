@@ -1,0 +1,43 @@
+ /*
+Cryptocurrency Exchange
+Fiddy Cent is a digital currency exchange headquartered in Neo Tokyo. They broker exchanges of Bitcoin, Bitcoin Cash, Ethereum, and Litecoin with fiat currencies in around 50 countries.
+
+Help them analyze their January ledger data using SQL aggregate functions! You are given the transactions table, which contains both money-in and money-out transactions.
+ */
+
+ --checking out the whole transactions table:
+ SELECT * FROM transactions;
+ SELECT COUNT(*) FROM transactions;
+
+ --The money_in column records the amount (in USD) the user bought.
+ --What is the total money_in in the table?
+SELECT SUM(money_in)
+FROM transactions;
+
+--The money_out column records the amount (in USD) the user sold.
+--What is the total money_out in the table?
+SELECT SUM(money_out)
+FROM transactions;
+
+--It was reported that Bitcoin dominates Fiddy Cent’s exchange. Let’s see if it is true within these dates by answering two questions:
+--How many money_in transactions are in this table?
+SELECT COUNT(money_in)
+FROM transactions;
+--How many money_in transactions are in this table where ‘BIT’ is the currency?
+SELECT COUNT(money_in)
+FROM transactions
+WHERE currency = 'BIT';
+
+--What was the largest transaction in this whole table? Was it money_in or money_out?
+SELECT MAX(money_in) AS max_buy, MAX(money_out) AS max_sell
+FROM transactions;
+
+--What is the average money_in in the table for the currency Ethereum (‘ETH’)?
+SELECT ROUND(AVG(money_in), 2) AS average_buy
+FROM transactions
+WHERE currency = 'ETH';
+
+--Build a ledger for the different dates.
+SELECT date, ROUND(AVG(money_in), 2) AS average_buy, ROUND(AVG(money_out), 2) AS average_sell
+FROM transactions
+GROUP BY date;
