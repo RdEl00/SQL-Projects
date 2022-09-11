@@ -6,7 +6,7 @@ This repository provides a sample of data analysis work I completed using SQL an
   <img src="img/my-sql-query.jpg">
 </p>
 
-<center>
+<div align="center">
 
 Project Name  | Tables (csv)   |
 ------------- | ------------- |
@@ -21,7 +21,7 @@ Project Name  | Tables (csv)   |
 [The_Metropolitan_Museum_of_Art.sqlite](https://github.com/RdEl00/SQL-Projects/blob/master/The_Metropolitan_Museum_of_Art.sqlite)  | [The_Metropolitan_Museum_of_Art.csv](https://github.com/RdEl00/SQL-Projects/blob/master/tables/The_Metropolitan_Museum_of_Art.csv)
 [Cryptocurrency_Exchange.sqlite](https://github.com/RdEl00/SQL-Projects/blob/master/Cryptocurrency_Exchange.sqlite)  | [Cryptocurrency_Exchange.csv](https://github.com/RdEl00/SQL-Projects/blob/master/tables/Cryptocurrency_Exchange.csv)
 
-</center>
+</div>
 
 
 
