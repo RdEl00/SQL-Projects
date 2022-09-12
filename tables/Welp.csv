@@ -1,0 +1,111 @@
+id,name,address,type,average_rating,price_point,total_reviews
+1,Hairs to You,45-45 Queens Boulevard,Beauty,4.9,$$$,36
+2,Doggonit!,100 Atlantic Ave,Pet Store,3.1,$$,52
+3,Abra Kebabra,193 Sauthoff Way,Restaurant,3.3,$,315
+4,Wok this Way,46 Crest Line Way,Restaurant,3.8,$$$,279
+5,You've Got Nail,1912 Fisk Road,Beauty,4.8,$,47
+6,Pane in the Glass,3767 Mifflin Terrace,Home,1.9,$$,463
+7,Laugh Your Bottom Off,4 Arrowood Center,Clothing,5,$$$,340
+8,Boobie Trap,16518 Hollow Ridge Crossing,Bar,3.2,$$,232
+9,Metropolitan,559 Lorimer Street,Bar,4.1,$,252
+10,Thai Tanic,4 Meadow Valley Crossing,Restaurant,2.2,$$$,343
+11,Phogeddaboudit,3 Glacier Hill Lane,Restaurant,4.1,$$,304
+12,"Brool Story, Co.",64656 Redwing Street,Books,3.5,$$$,395
+13,Curl Up & Dye,60 Del Mar Alley,Beauty,2,$$,46
+14,IDK Consulting,62 Vermont Avenue,Consulting,4.8,$,138
+15,Harsh Realty,21 Jackson Terrace,Realtors,2.1,$$,391
+16,Marky Market,33 Little Fleur Plaza,Grocery,1.5,$$$$,308
+17,Pieces,8 Christopher Street,Bar,3.2,$,154
+18,Spurtz Creamery,098 Anderson Hill,Dessert,2.6,$$$$,73
+19,Happy Hamper,11 Fair Oaks Parkway,Laundromat,4.6,$$$$,48
+20,Tipsy's,90767 Starling Park,Bar,3.6,$$,47
+21,Lawn & Order,9 Northland Junction,Outdoors,4.7,$,385
+22,Silent Gas,4410 Mallory Drive,Automotive,3.2,$$,418
+id,username,place_id,review_date,rating,note,
+149,@pinkdeb,8,2019-07-25,4,Nice little place to grab a drink,
+117,@ahohl,16,2019-07-29,3,The produce is always bad but otherwise okay,
+119,@sammyantha,8,2019-07-30,4,LOVE how kitschy this place is! Bring your visiting friends,
+109,@see.matt.run,20,2019-08-09,4,"Good and cheap, what else do you need?",
+173,@kadencita,15,2019-08-13,4,They had a lot to say about my choices but I got what I wanted!,
+154,@neopostmodern,7,2019-08-14,3,"Not good, not bad.",
+145,@meggs17,20,2019-08-29,2,Not going back,
+143,@pinkdeb,15,2019-08-31,3,I felt like they were kind of mean? But effective,
+110,@ygor,11,2019-09-01,4,Pretty good pho!,
+124,@pinkdeb,16,2019-09-02,1,My bunch of bananas was definitely funky,
+141,@meggs17,14,2019-09-04,3,I think we're all more confused now,
+164,@ahohl,18,2019-09-06,3,Enjoyed the ice cream but it didn't sit well :/,
+137,@its_ozzy,1,2019-09-11,3,"Okay, now i understand why that guy looked so upset last time!!!",
+169,@nouramonster,13,2019-09-13,3,So it wasn't great but maybe I just cut it too short?,
+146,@evian_,8,2019-09-14,1,"Unoriginal name, scene, drinks, everything",
+152,@its_ozzy,20,2019-09-19,3,It was okay but like don't need to go again?,
+178,@ahohl,13,2019-09-19,2,"Wow, I've never related to a shop name more than after going here",
+130,@sammyantha,6,2019-09-22,5,"Totally worth it! Definitely wasn't a ""pane""",
+122,@meggs17,18,2019-09-29,5,You have to try their chocolate swirl cone!,
+155,@evian_,20,2019-09-30,2,Ugh this place is just not good and I didn't like their attitude,
+138,@sammyantha,18,2013-10-02,5,Go for the large -- it's worth it!!,
+177,@its_ozzy,17,2014-10-09,5,Love the place.. my second home,
+103,@sammyantha,5,2015-10-11,4,Love my nails!,
+116,@pinkdeb,18,2016-10-14,3,Didn't enjoy the toppings selection,
+106,@eugeneinabottle,6,2016-10-17,5,Fixed my window so quickly!!,
+151,@see.matt.run,9,2016-10-18,5,Always a fav,
+120,@youngNOTold,5,2017-10-21,2,You get what you pay for -- my cuticles look terrible!,
+144,@ahohl,3,2018-10-31,5,A truly magical experience!,
+129,@its_ozzy,4,2019-11-23,2,"More like ""wok away"" -- don't recommend!",
+171,@evian_,9,2019-11-24,3,Not terrible,
+167,@see.matt.run,13,2019-12-06,2,One day I'll get a good haircut... unfortunately that's not today,
+156,@meggs17,19,2019-12-08,5,They can wash it all -- Sofia is the best!,
+158,@pinkdeb,14,2019-12-10,2,Definitely don't feel like they knew what they were doing,
+132,@evian_,6,2019-12-11,3,Actually did a good job,
+165,@hannah.matrix,3,2019-12-20,4,It's like they cast a spell on me,
+104,@youngNOTold,4,2019-12-22,1,Pricey and not very good tbh,
+111,@sylviaaaa,2,2019-12-24,5,This place isn't just for dogs -- lots of cat stuff too!,
+114,@seanandtell,9,2019-12-28,5,Love the big backyard,
+136,@see.matt.run,11,2020-01-01,3,Not bad but don't think I'll go back,
+134,@pinkdeb,19,2020-01-06,2,They ruined all my lace fronts,
+108,@pinkdeb,3,2020-01-14,1,I wish I could use some magic to make this place disappear,
+172,@hobgobble,1,2020-01-23,5,Great cut!!,
+127,@sammyantha,1,2020-01-27,5,Hair has never looked better,
+123,@hannah.matrix,5,2020-01-30,4,Not bad considering how inexpensive!,
+180,@pinkdeb,6,2020-02-07,1,Will absolutely not return,
+168,@ciaobella,11,2020-02-11,3,Eh.,
+107,@jared.knoys.best,8,2020-02-20,3,Dive bar amenities with cocktail bar prices,
+118,@see.matt.run,12,2020-02-23,4,It's nice to see a real bookshop still existing -- ask for Sherly!,
+139,@youngNOTold,9,2020-02-23,4,Great place to hang with friends,
+126,@its_ozzy,8,2020-02-25,5,Great little bar to meet up with friends,
+157,@hannah.matrix,16,2020-03-07,4,They have the best selection of hot sauces in town!,
+159,@terencia,17,2020-03-12,4,Best happy hour downtown!,
+185,@kristygurl,11,2020-03-17,5,You HAVE to get the panang curry! GURL!,
+105,@evian_,18,2020-03-18,2,Their ice cream isn't icey or creamy,
+161,@sammyantha,9,2020-03-27,4,Two words: HAPPY HOUR,
+135,@ahohl,19,2020-03-29,4,Love how spacious it is,
+170,@youngNOTold,7,2020-04-01,3,Didn't laugh once I saw the prices,
+181,@doloresblood,2,2020-04-15,2,The owner was so rude to me! But I got a great deal on litter,
+163,@evian_,16,2020-04-16,3,"You gotta believe me, pretty good!",
+125,@ahohl,20,2020-04-18,2,I truly did not enjoy my time here,
+128,@see.matt.run,15,2020-04-19,5,Could find me a great place under budget!,
+183,@mikesarc,7,2020-04-20,2,Terrible,
+186,@pinkdeb,1,2020-04-21,2,Hated it but my stylist was nice,
+179,@girljeramie,12,2020-04-24,4,Definitely check out their foreign books!,
+184,@ahohl,21,2020-04-26,4,FINALLY someone could get my shrubbery under control!,
+174,@kristygurl,7,2020-05-02,4,Cute stuff and women-owned! #girlpower,
+176,@see.matt.run,1,2020-05-07,5,LOVE,
+147,@crystallinez,8,2020-05-09,3,It's a dive bar so yeah,
+162,@youngNOTold,20,2020-05-23,3,Fun for after work but that's about it,
+101,@see.matt.run,1,2020-06-01,1,My hair will never be the same!,
+102,@its_ozzy,1,2020-06-01,5,Great but the guy next to me didn’t look happy,
+112,@youngNOTold,11,2020-06-04,4,Tasty but not as good as Phonomenal uptown,
+175,@solar_andrew,9,2020-06-04,4,Love it! But pretty sure I lost my wallet there...,
+148,@pinkdeb,11,2020-06-08,2,I would really like to forget about this place,
+187,@sammyantha,7,2020-06-08,5,Guys. This place is too cute!! It has great finds!,
+166,@evian_,15,2020-06-18,1,So rude!!! STAY AWAY,
+121,@seanandtell,17,2020-06-21,4,"Came for the drag, stayed for the fun",
+153,@sammyantha,5,2020-06-22,3,It was okay for when I'm in a pinch,
+115,@hannah.matrix,15,2020-06-26,5,They helped me find my dream apartment!,
+142,@hannah.matrix,2,2020-06-28,2,Meh not the best selection,
+160,@its_ozzy,9,2020-06-28,4,My go-to bar! Warning: drinks are strong!,
+133,@hannah.matrix,6,2020-07-07,3,The guy Jeff was definitely a pain in my glass,
+131,@youngNOTold,3,2020-07-08,5,Best kebabs in town! Owner is a real wiz on the grill,
+150,@its_ozzy,7,2020-07-09,4,What a cute place! So funky and fun,
+182,@hannah.matrix,13,2020-07-10,1,WELP. They lived up to their name.,
+113,@evian_,7,2020-07-12,1,Wow. Overpriced and ill-fitting,
+140,@shyamsworld,3,2020-07-17,4,Delish and won't cost a fortune,

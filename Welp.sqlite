@@ -1,0 +1,67 @@
+/*
+Users love Welp because it allows them to leave reviews of businesses in their city and see how other people reviewed the businesses.
+
+For this project, you will be working with two tables:
+
+  - places
+  - reviews
+*/
+--Understanding the data
+SELECT * FROM places;
+SELECT * FROM reviews;
+
+--If each dollar sign ($) represents $10, how could you find all places that cost $20 or less?
+SELECT *
+FROM places
+WHERE price_point IN ('$' ,'$$')
+
+--What columns can be used to JOIN these two tables?
+
+CREATE VIEW INNERTABLE AS
+SELECT p.name, p.average_rating, r.username, r.rating, r.review_date, r.note
+FROM places AS p
+INNER JOIN reviews AS r
+   ON p.id = r.place_id;
+
+SELECT COUNT(*) FROM INNERTABLE; --87
+
+--write a query to do a LEFT JOIN on the tables,How are the results of this query different?
+
+CREATE VIEW LEFTTABLE AS
+SELECT p.name, p.average_rating, r.username, r.rating, r.review_date, r.note
+FROM places AS p
+LEFT JOIN reviews AS r
+   ON p.id = r.place_id;
+
+SELECT COUNT(*) FROM LEFTTABLE; --89
+
+-- What about the places without reviews in our dataset?
+--Write a query to find all the ids of places that currently do not have any reviews in our reviews table.
+
+SELECT p.id, p.name
+FROM places AS p
+LEFT JOIN reviews AS r
+   ON p.id = r.place_id
+WHERE r.place_id IS NULL ;
+
+--Sometimes on Welp, there are some old reviews that aren’t useful anymore.
+
+with old_reviews as (
+select *
+from reviews
+where strftime("%Y", review_date) = '2020'
+)
+select *
+from old_reviews
+join places
+on old_reviews.place_id = places.id;
+
+--Businesses want to be on the lookout for …ahem… difficult reviewers. Write a query that finds the reviewer with the most reviews that are BELOW the average rating for places.
+
+SELECT username, COUNT(*) AS nb , average_rating
+FROM reviews AS r
+LEFT JOIN places AS p
+  ON p.id = r.place_id 
+WHERE rating < average_rating 
+GROUP BY username 
+ORDER BY nb DESC;
