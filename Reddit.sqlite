@@ -1,0 +1,109 @@
+/*
+On Reddit, users can create posts with content such as text, media, and links to other websites. Users can post content to different communities known as subreddits, which focus on a particular topic. Users can then rate others’ content by upvoting or downvoting them, and each post will show its total cumulative score.
+
+For this task you were given three tables:
+
+  - users: users data
+  - posts: posts information
+  - posts2: new posts added to Reddit
+  - subreddits: information about subreddits
+*/
+--Getting Familiar with the Data
+-- Examining the three tables.
+SELECT * FROM users;
+SELECT * FROM posts;
+SELECT * FROM posts2;
+SELECT * FROM subreddits;
+
+--What is the primary key for each table? Can you identify any foreign keys?
+/*
+- The primary key of users table is id.
+- The primary key of posts table is id.
+- The primary key of subreddits table is id.
+- The posts table has foreign keys user_id and subreddit_id.
+*/
+
+--Write a query to count how many different subreddits there are.
+
+SELECT COUNT(DISTINCT name) AS 'subreddit_count'
+FROM subreddits;
+
+--Write a few more queries to figure out the following information:
+ --What user has the highest score?
+SELECT username, score
+FROM users
+GROUP BY username
+ORDER BY score DESC;
+ --What post has the highest score? 
+SELECT title, score
+FROM posts
+GROUP BY title
+ORDER BY score DESC;
+  --What are the top 5 subreddits with the highest    subscriber_count?
+SELECT name, subscriber_count
+FROM subreddits
+GROUP BY name
+ORDER BY subscriber_count DESC
+LIMIT 5;
+
+--Using Joins
+--Now let’s join the data from the different tables to find out some more information.
+--how many posts each user has made?
+
+SELECT u.username, COUNT(p.title) AS posts_count
+FROM users AS u
+LEFT JOIN posts AS p
+ON p.user_id = u.id
+GROUP BY u.username
+ORDER BY 2 DESC;
+
+--Over time, posts may be removed and users might delete their accounts. We only want to see existing posts where the users are still active.
+
+SELECT u.username AS active_users , p.title AS existing_posts
+FROM posts AS p
+INNER JOIN users AS u
+ON p.user_id = u.id;
+
+--Some new posts have been added to Reddit!
+--Stack the new posts2 table under the existing posts table to see them.
+
+WITH fposts AS (
+  SELECT *
+  FROM posts
+  UNION
+  SELECT *
+  FROM posts2
+)
+
+--More advanced queries
+--Which subreddits have the most popular posts. We’ll say that a post is popular if it has a score of at least 5000.
+WITH popular_posts AS (
+  SELECT *
+  FROM posts
+  WHERE score >= 5000
+  UNION
+  SELECT *
+  FROM posts2
+  WHERE score >= 5000
+)
+SELECT s.name, pp.title, pp.score
+FROM popular_posts AS pp
+INNER JOIN subreddits AS s
+  ON pp.subreddit_id = s.id
+ORDER BY pp.score DESC;
+
+--find out the highest scoring post for each subreddit.
+--write a query to calculate the average score of all the posts for each subreddit.
+WITH fposts AS (
+  SELECT *
+  FROM posts
+  UNION
+  SELECT *
+  FROM posts2
+)
+SELECT s.name AS 'subreddit_name', fp.title, MAX(fp.score) AS 'highest_score', ROUND(AVG(fp.score), 0) AS 'avg_score'
+FROM fposts AS fp
+INNER JOIN subreddits AS s
+  ON fp.subreddit_id = s.id
+GROUP BY s.name;
+
