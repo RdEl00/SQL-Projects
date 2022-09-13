@@ -1,0 +1,118 @@
+/*
+Codecademy Virtual Reality (CVR), Inc. is the latest startup on the VR scene. As head of the Project Completion team, you have been given a list of upcoming projects needing to be delivered. Your main responsibility is to analyze our current talent pool to ensure each project can be completed efficiently and effectively.
+
+Each project needs a Project Manager, Team Lead, Designer, Database Administrator (DBA), and at least two Developers.
+
+Happy analyzing!
+*/
+--Getting familiar with the data
+--Examine the data from the employees table.
+SELECT * FROM employees;
+--Examine the data in the projects table.
+SELECT * FROM projects;
+--projects table’s project_id could be joined with employees table’s current_project.
+
+--What are the names of employees who have not chosen a project?
+SELECT first_name || ' ' || last_name AS full_name
+FROM employees
+WHERE current_project IS NULL;
+
+--What are the names of projects that were not chosen by any employees?
+
+SELECT project_name
+FROM projects
+WHERE project_id NOT IN (
+  SELECT current_project
+  FROM employees
+  WHERE current_project IS NOT NULL);
+
+--Analyzing projects and current staff
+--What is the name of the project chosen by the most employees?
+SELECT COUNT(current_project) AS nbr, project_name
+FROM employees AS e
+INNER JOIN projects AS p
+  ON p.project_id = e.current_project
+WHERE current_project IS NOT NULL
+GROUP BY project_name
+ORDER BY nbr DESC
+LIMIT 1;
+--Which projects were chosen by multiple employees?
+SELECT COUNT(current_project) AS nbr, project_name
+FROM employees AS e
+INNER JOIN projects AS p
+  ON p.project_id = e.current_project
+WHERE current_project IS NOT NULL
+GROUP BY project_name
+HAVING nbr > 1
+ORDER BY nbr DESC;
+
+--Each project needs at least 2 developers.
+--How many available project positions are there for developers?
+--Do we have enough developers to fill the needed positions?
+SELECT (COUNT(*) * 2) - (
+  SELECT COUNT(*)
+  FROM employees
+  WHERE current_project IS NOT NULL
+    AND position = 'Developer'
+) AS count
+FROM projects;
+
+--When employees are hired at CVR, they are given the Myers-Briggs personality test. We try to diminish tension among team members by creating teams based on compatible personalities.
+--Which personality is the most common across our employees?
+SELECT personality, COUNT(personality) AS count
+FROM employees
+WHERE current_project IS NOT NULL
+GROUP BY personality
+ORDER by count DESC
+LIMIT 1;
+
+--What are the names of projects chosen by employees with the most common personality type?
+SELECT project_name, personality
+FROM employees AS e
+INNER JOIN projects AS p
+  ON p.project_id = e.current_project
+WHERE personality = 'ISTJ';
+
+--Find the personality type most represented by employees with a selected project.
+SELECT first_name || ' ' || last_name AS full_name, project_name, personality
+FROM employees AS e
+INNER JOIN projects AS p
+  ON p.project_id = e.current_project
+WHERE personality = (
+   SELECT personality 
+   FROM employees
+   WHERE current_project IS NOT NULL
+   GROUP BY personality
+   ORDER BY COUNT(personality) DESC
+   LIMIT 1);
+
+--For each employee, provide their name, personality, the names of any projects they’ve chosen, and the number of incompatible co-workers.
+SELECT first_name || ' ' || last_name AS full_name, personality, project_name,
+CASE 
+    WHEN personality = 'INFP' OR personality = 'ENFP' OR personality = 'INFJ'
+    THEN (SELECT COUNT(*)
+    FROM employees
+    WHERE personality IN ('ISFP', 'ESFP', 'ISTP', 'ESTP', 'ISFJ', 'ESFJ', 'ISTJ', 'ESTJ'))
+
+    WHEN personality = 'ENFJ'
+    THEN (SELECT COUNT(*)
+    FROM employees
+    WHERE personality IN ('ESFP', 'ISTP', 'ESTP', 'ISFJ', 'ESFJ', 'ISTJ', 'ESTJ'))
+
+    WHEN personality = 'ISFP'
+    THEN (SELECT COUNT(*)
+    FROM employees
+    WHERE personality IN ('INFP', 'ENFP', 'INFJ'))
+
+    WHEN personality = 'ESFP' OR personality = 'ISTP' OR personality = 'ESTP' OR personality = 'ISFJ' OR personality = 'ESFJ' OR personality = 'ISTJ' OR personality = 'ESTJ'
+    THEN (SELECT COUNT(*)
+    FROM employees
+    WHERE personality IN ('INFP', 'ENFP', 'INFJ', 'ENFJ'))
+
+    ELSE 0
+END AS 'Incompatible'
+FROM employees AS e
+LEFT JOIN projects AS p
+  ON p.project_id = e.current_project;
+
+

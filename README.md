@@ -22,7 +22,7 @@ Project Name  | Tables (csv)   |
 [Cryptocurrency_Exchange.sqlite](https://github.com/RdEl00/SQL-Projects/blob/master/Cryptocurrency_Exchange.sqlite)  | [Cryptocurrency_Exchange.csv](https://github.com/RdEl00/SQL-Projects/blob/master/tables/Cryptocurrency_Exchange.csv)
 [Welp.sqlite](https://github.com/RdEl00/SQL-Projects/blob/master/Welp.sqlite)  | [Welp.csv](https://github.com/RdEl00/SQL-Projects/blob/master/tables/Welp.csv)
 [Reddit.sqlite](https://github.com/RdEl00/SQL-Projects/blob/master/Reddit.sqlite)  | [Reddit.csv](https://github.com/RdEl00/SQL-Projects/blob/master/tables/Reddit.csv)
-
+[VR-Startup-Company.sqlite](https://github.com/RdEl00/SQL-Projects/blob/master/VR-Startup-Company.sqlite)  | [VR-Startup-Company.csv](https://github.com/RdEl00/SQL-Projects/blob/master/tables/VR-Startup-Company.csv)
 
 </div>
 
