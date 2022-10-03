@@ -10,9 +10,9 @@ This repository provides a sample of data analysis work I completed using SQL an
 
 Project Name  | Tables (csv)   | Description 
 ------------- | ------------- | ------------- |
-[Create_a_Table.sqlite](https://github.com/RdEl00/SQL-Projects/blob/master/Create_a_Table.sqlite)  | - |Create your own friends table and add/delete data from it!
-[New_York_Restaurants.sqlite](https://github.com/RdEl00/SQL-Projects/blob/master/New_York_Restaurants.sqlite)  | [nomnom.csv](https://github.com/RdEl00/SQL-Projects/blob/master/tables/nomnom.csv)| -
-[Trends_in_Startups.sqlite](https://github.com/RdEl00/SQL-Projects/blob/master/Trends_in_Startups.sqlite)  | [startups.csv](https://github.com/RdEl00/SQL-Projects/blob/master/tables/startups.csv)|-
+[Create_a_Table.sqlite](https://github.com/RdEl00/SQL-Projects/blob/master/Create_a_Table.sqlite)  | - |Creating my friends table and add/delete data from it!
+[New_York_Restaurants.sqlite](https://github.com/RdEl00/SQL-Projects/blob/master/New_York_Restaurants.sqlite)  | [nomnom.csv](https://github.com/RdEl00/SQL-Projects/blob/master/tables/nomnom.csv)| Finding the best dinner spots in the city.
+[Trends_in_Startups.sqlite](https://github.com/RdEl00/SQL-Projects/blob/master/Trends_in_Startups.sqlite)  | [startups.csv](https://github.com/RdEl00/SQL-Projects/blob/master/tables/startups.csv)| Retrieve some interesting insights about the rising trends in the startup world.
 [Analyze_Hacker_News_Trends.sqlite](https://github.com/RdEl00/SQL-Projects/blob/master/Analyze_Hacker_News_Trends.sqlite)  | [hacker_news .csv](https://github.com/RdEl00/SQL-Projects/blob/master/tables/hacker_news%20.csv)|-
 [Lyft_Trip_Data.sqlite](https://github.com/RdEl00/SQL-Projects/blob/master/Lyft_Trip_Data.sqlite)  | [Trips_Riders_Cars.csv](https://github.com/RdEl00/SQL-Projects/blob/master/tables/Trips_Riders_Cars.csv)|-
 [RPA_Fraud_Detection.sqlite](https://github.com/RdEl00/SQL-Projects/blob/master/RPA_Fraud_Detection.sqlite)  | [RPA_Fraud_Detection.csv](https://github.com/RdEl00/SQL-Projects/blob/master/tables/RPA_Fraud_Detection.csv)|-
