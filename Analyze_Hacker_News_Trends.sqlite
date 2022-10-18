@@ -8,7 +8,6 @@ user: the user who submitted the story
 score: the score of the story
 timestamp: the time of the story
 url: the link of the story
-This data was kindly made publicly available under the MIT license.
 
 Let’s get started!
 */
